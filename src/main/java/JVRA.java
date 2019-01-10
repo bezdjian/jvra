@@ -12,17 +12,16 @@ public class JVRA {
             Configuration configuration = new Configuration();
 
             // Set path to the acoustic model.
-            configuration.setAcousticModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us");
+            configuration.setAcousticModelPath("lib/en-us");
 
             // Set path to the dictionary.
-            configuration.setDictionaryPath("YOUR_.DIC_FILE_PATH_HERE");
+            configuration.setDictionaryPath("lib/cmudict-en-us.dict");
 
             // Set path to the language model.
-            configuration.setLanguageModelPath("YOUR_.LM_FILE_PATH_HERE");
+            configuration.setLanguageModelPath("lib/en-us.lm.bin");
 
             //Recognizer object, Pass the Configuration object
-            LiveSpeechRecognizer recognize = null;
-            recognize = new LiveSpeechRecognizer(configuration);
+            LiveSpeechRecognizer recognize = new LiveSpeechRecognizer(configuration);
 
             //Start Recognition Process (The bool parameter clears the previous cache if true)
             recognize.startRecognition(true);
