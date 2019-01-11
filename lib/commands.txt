@@ -1,0 +1,8 @@
+open file manager
+open browser
+close browser
+close file manager
+terminal
+exit
+kill it
+search
