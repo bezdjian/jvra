@@ -4,6 +4,7 @@ import edu.cmu.sphinx.api.SpeechResult;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;
+import java.net.URL;
 
 public class JVRA {
 
@@ -21,9 +22,16 @@ public class JVRA {
 
             // Set path to the dictionary.
             configuration.setDictionaryPath("lib/jvra.dic");
+            //configuration.setDictionaryPath("lib/cmudict.dic");
 
             // Set path to the language model.
             configuration.setLanguageModelPath("lib/jvra.lm");
+            //configuration.setLanguageModelPath("lib/en-us.lm.bin");
+
+            // Grammar
+            /*configuration.setGrammarPath("lib/");
+            configuration.setGrammarName("grammar");
+            configuration.setUseGrammar(true);*/
 
             //Recognizer object, Pass the Configuration object
             LiveSpeechRecognizer recognize = new LiveSpeechRecognizer(configuration);
@@ -36,6 +44,7 @@ public class JVRA {
 
             String os = System.getProperty("os.name").toLowerCase();
             LOGGER.info("OS Name: " + os);
+            LOGGER.info("JVRA is listening..");
 
             //Check if recognizer recognized the speech
             while ((result = recognize.getResult()) != null) {
@@ -44,13 +53,13 @@ public class JVRA {
                 String work = null;
                 Process p;
 
-                if(os.contains("windows")){
+                if (os.contains("windows")) {
                     LOGGER.info("OS is " + os + " and command is " + command);
                     work = Commands.windowsCommands.get(command.toLowerCase());
-                }else if(os.contains("linux")){
+                } else if (os.contains("linux")) {
                     LOGGER.info("OS is " + os + " and command is " + command);
                     work = Commands.linuxCommands.get(command.toLowerCase());
-                }else{
+                } else {
                     LOGGER.info("ELSE OS is " + os + " and command is " + command);
                 }
                 LOGGER.info("Work is " + work);

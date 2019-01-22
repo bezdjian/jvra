@@ -9,10 +9,13 @@ public class Commands {
         HashMap<String, String> map = new HashMap<String, String>();
         map.put("search", "\"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\" google.se");
         map.put("open browser", "\"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\"");
+        map.put("browser", "\"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\"");
         map.put("open mail", "\"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\" gmail.se");
-        map.put("terminal", "\"D:\\Program Files\\Git\\bin\\bash.exe\"");
+        map.put("email", "\"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\" gmail.com");
+        map.put("terminal", "\"D:\\Program Files\\Git\\git-bash.exe\" --cd-to-home");
         map.put("open terminal", "\"D:\\Program Files\\Git\\bin\\bash.exe\"");
         map.put("open manager", "explorer");
+        map.put("file manager", "explorer");
         return map;
     }
 

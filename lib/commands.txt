@@ -4,5 +4,6 @@ close browser
 close file manager
 terminal
 exit
-kill it
 search
+open email
+email
