@@ -17,9 +17,9 @@
         </dependency>
 
         <dependency>
-          <groupId>de.sciss</groupId>
-          <artifactId>sphinx4-core</artifactId>
-          <version>1.0.0</version>
+            <groupId>net.sf.phat</groupId>
+            <artifactId>sphinx4-core</artifactId>
+            <version>5prealpha</version>
         </dependency>
 
         <dependency>

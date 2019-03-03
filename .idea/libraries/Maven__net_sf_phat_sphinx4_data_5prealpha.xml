@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: net.sf.phat:sphinx4-data:5prealpha">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sf/phat/sphinx4-data/5prealpha/sphinx4-data-5prealpha.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sf/phat/sphinx4-data/5prealpha/sphinx4-data-5prealpha-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sf/phat/sphinx4-data/5prealpha/sphinx4-data-5prealpha-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

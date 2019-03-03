@@ -1,4 +1,4 @@
-Language model created by QuickLM on Fri Jan 11 16:20:56 EST 2019
+Language model created by QuickLM on Fri Jan 11 17:22:22 EST 2019
 Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
 
 The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
@@ -7,46 +7,61 @@ The code that was used to produce this language model is available in Open Sourc
 Please visit http://www.speech.cs.cmu.edu/tools/ for more information
 
 The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
-This model based on a corpus of 5 sentences and 8 words
+This model based on a corpus of 9 sentences and 11 words
 
 \data\
-ngram 1=8
-ngram 2=11
-ngram 3=10
+ngram 1=11
+ngram 2=18
+ngram 3=15
 
 \1-grams:
--0.9243 </s> -0.3010
--0.9243 <s> -0.2460
--1.3222 BROWSER -0.2460
--1.3222 CLOSE -0.2576
--1.3222 FILE -0.2798
--1.3222 MANAGER -0.2460
--1.3222 OPEN -0.2576
--1.6232 TERMINAL -0.2460
+-0.8783 </s> -0.3010
+-0.8783 <s> -0.2319
+-1.5315 BROWSER -0.2394
+-1.5315 CLOSE -0.2747
+-1.5315 EMAIL -0.2394
+-1.8325 EXIT -0.2394
+-1.5315 FILE -0.2881
+-1.5315 MANAGER -0.2394
+-1.3554 OPEN -0.2609
+-1.8325 SEARCH -0.2394
+-1.8325 TERMINAL -0.2394
 
 \2-grams:
--0.6990 <s> CLOSE 0.0000
--0.6990 <s> OPEN 0.0000
--1.0000 <s> TERMINAL 0.0000
+-0.9542 <s> CLOSE 0.0000
+-1.2553 <s> EMAIL 0.0000
+-1.2553 <s> EXIT 0.0000
+-0.7782 <s> OPEN 0.0000
+-1.2553 <s> SEARCH 0.0000
+-1.2553 <s> TERMINAL 0.0000
 -0.3010 BROWSER </s> -0.3010
 -0.6021 CLOSE BROWSER 0.0000
 -0.6021 CLOSE FILE 0.0000
+-0.3010 EMAIL </s> -0.3010
+-0.3010 EXIT </s> -0.3010
 -0.3010 FILE MANAGER 0.0000
 -0.3010 MANAGER </s> -0.3010
--0.6021 OPEN BROWSER 0.0000
--0.6021 OPEN FILE 0.0000
+-0.7782 OPEN BROWSER 0.0000
+-0.7782 OPEN EMAIL 0.0000
+-0.7782 OPEN FILE 0.0000
+-0.3010 SEARCH </s> -0.3010
 -0.3010 TERMINAL </s> -0.3010
 
 \3-grams:
 -0.6021 <s> CLOSE BROWSER
 -0.6021 <s> CLOSE FILE
--0.6021 <s> OPEN BROWSER
--0.6021 <s> OPEN FILE
+-0.3010 <s> EMAIL </s>
+-0.3010 <s> EXIT </s>
+-0.7782 <s> OPEN BROWSER
+-0.7782 <s> OPEN EMAIL
+-0.7782 <s> OPEN FILE
+-0.3010 <s> SEARCH </s>
 -0.3010 <s> TERMINAL </s>
 -0.3010 CLOSE BROWSER </s>
 -0.3010 CLOSE FILE MANAGER
 -0.3010 FILE MANAGER </s>
 -0.3010 OPEN BROWSER </s>
+-0.3010 OPEN EMAIL </s>
 -0.3010 OPEN FILE MANAGER
 
 \end\
