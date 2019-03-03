@@ -44,15 +44,16 @@ public class JVRA {
                 String work = null;
                 Process p;
 
+                System.out.println("Ready to take command!");
+
                 if(os.contains("windows")){
-                    LOGGER.info("OS is " + os + " and command is " + command);
                     work = Commands.windowsCommands.get(command.toLowerCase());
                 }else if(os.contains("linux")){
-                    LOGGER.info("OS is " + os + " and command is " + command);
                     work = Commands.linuxCommands.get(command.toLowerCase());
                 }else{
                     LOGGER.info("ELSE OS is " + os + " and command is " + command);
                 }
+                LOGGER.info("The Command recieved: " + command);
                 LOGGER.info("Work is " + work);
 
                 if (work != null) {
