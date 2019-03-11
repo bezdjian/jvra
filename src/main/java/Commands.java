@@ -23,8 +23,9 @@ public class Commands {
         HashMap<String, String> map = new HashMap<String, String>();
         map.put("search", "google-chrome google.se");
         map.put("browser", "google-chrome");
-        map.put("open mail", "google-chrome gmail.se");
-        map.put("terminal", "terminal");
+        map.put("open mail", "google-chrome gmail.com");
+        map.put("open email", "google-chrome gmail.com");
+        map.put("terminal", "deepin-terminal");
         map.put("file manager", "explorer");
         return map;
     }
